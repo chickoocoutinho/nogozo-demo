@@ -35,6 +35,7 @@ const useStyles= makeStyles({
         display: 'grid',
         gridTemplateColumns: '25px auto',
         gridColumnGap: '5px',
+        alignItems: 'center',
         backgroundColor: 'transparent',
         transition: '0.2s',
         '&:hover':{

@@ -10,8 +10,8 @@ const Div= styled('div')({
       margin: 'auto 5%',
     },
     '@media(max-width:430px)':{
-      width: '98%',
-      margin: 'auto 1%',    
+      width: '96%',
+      margin: 'auto 2%',    
     }
   });
 

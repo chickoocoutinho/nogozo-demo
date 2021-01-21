@@ -1,7 +1,6 @@
 import {makeStyles} from '@material-ui/core/styles';
 import Container from '../Container/Container';
 import SearchBox from './SearchBox';
-import PersonIcon from '@material-ui/icons/Person';
 import ShoppingCart from '../../assets/shopping-cart-promotion.png';
 import Menu from './Menu';
 
@@ -31,8 +30,6 @@ const Header = () => {
                 <div className={styles.logoDiv}>
                     <img src={ShoppingCart} alt="Shopping cart"/>
                     <Menu />
-                    {//<PersonIcon style={{color:'#fff'}} />
-}
                 </div>
                 <SearchBox />
             </Container>
