@@ -9,6 +9,8 @@ import food from '../../assets/food.jpg';
 import fruits from '../../assets/fruits.jpg';
 import grocery from '../../assets/grocery.jpg';
 
+import { Link } from "@reach/router"
+
 const images=[diwali,grocery,food,fruits,dairy,craft,books,fashion];
 
 const useStyles= makeStyles({
@@ -45,9 +47,11 @@ const Home = () => {
         <div className={styles.container}>
             {
                 images.map((value,id)=>(
-                    <Paper elevation={3} key={id} className={styles.paperPadding}>
-                        <img src={value} alt='select items' />
-                    </Paper>            
+                    <Link to='/shops' >
+                        <Paper elevation={3} key={id} className={styles.paperPadding}>
+                            <img src={value} alt='select items' />
+                        </Paper>     
+                    </Link>       
                 ))
             }
         </div>
