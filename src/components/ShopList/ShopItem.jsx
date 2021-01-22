@@ -2,6 +2,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import Typography from '@material-ui/core/Typography';
 
+import { useNavigate } from "@reach/router"
+
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 
 const useStyles= makeStyles({
@@ -10,7 +12,10 @@ const useStyles= makeStyles({
     },
     cardContainer:{
         padding: '10px',
-        marginBottom: '20px'
+        marginBottom: '20px',
+        '&:hover':{
+            cursor: 'pointer',
+        }
     },
     addressDiv:{
         display: 'grid',
@@ -28,9 +33,10 @@ const useStyles= makeStyles({
 
 const ShopItem = ({name, address, isOpen, homeBusiness}) => {
 
+    const navigate = useNavigate()
     const styles= useStyles();
     return (
-        <Card className={styles.cardContainer}>
+        <Card className={styles.cardContainer} onClick={()=>navigate(`/shopDetails`)}>
             <Typography variant="h5" component="h2">
                 {name}
             </Typography>
