@@ -39,7 +39,7 @@ const useStyles = makeStyles({
 
 });
 
-const MenuItem = ({name,quantity,price,count,setCount, id}) => {
+const MenuItem = ({name,quantity,price,count,setCount, id, isOpen}) => {
     const styles = useStyles();
 
     return (
@@ -58,7 +58,10 @@ const MenuItem = ({name,quantity,price,count,setCount, id}) => {
                             {`₹ ${price}`}
                         </Typography>
                     </div>
-                    <Counter count={count} setCount={setCount} id={id} />
+                    {
+                        isOpen?
+                        <Counter count={count} setCount={setCount} id={id} />:null
+                    }
                 </div>
             </div>
         </Card>

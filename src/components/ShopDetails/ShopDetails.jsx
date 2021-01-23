@@ -19,7 +19,7 @@ const useStyles= makeStyles({
     }
 });
 
-const ShopDetails = () => {
+const ShopDetails = ({location}) => {
     const [shopItemsQuantity,setShopItemsQuantity]= useState([
         0,0,0,0,0
     ]);
@@ -58,7 +58,7 @@ const ShopDetails = () => {
                 ShopItemsData.map((value,id)=>(
                     <MenuItem name={value.name} quantity={value.quantity} price={value.price}
                         count={shopItemsQuantity[id]} setCount={setShopItemsQuantity}
-                        id={id} key={id} />
+                        id={id} key={id} isOpen={location.state.isOpen} />
                 ))
             }
         </div>
