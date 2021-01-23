@@ -4,6 +4,7 @@ import ShopItemsData from "./dummyShopItemsData";
 import CartButtonDisplay from '../Cart/CartButtonDisplay';
 
 import { makeStyles } from '@material-ui/core/styles';
+import ShopSummary from "./ShopSummary";
 
 const useStyles= makeStyles({
     listContainer:{
@@ -53,6 +54,7 @@ const ShopDetails = ({location}) => {
     const styles= useStyles({showCart});
     return (
         <>
+        <ShopSummary isOpen={location.state.isOpen} name={location.state.name} />
         <div className={styles.listContainer}>
             {
                 ShopItemsData.map((value,id)=>(

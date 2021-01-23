@@ -24,7 +24,6 @@ const useStyles= makeStyles({
 const Header = () => {
 
     const styles= useStyles();
-
     return (
         <div className={styles.backgroundContainer}>
             <Container>
