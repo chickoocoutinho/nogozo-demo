@@ -1,6 +1,5 @@
 import { Paper } from "@material-ui/core";
 import { makeStyles } from '@material-ui/core/styles';
-import { useState } from "react";
 
 const useStyles= makeStyles({
     container:{
@@ -22,20 +21,39 @@ const useStyles= makeStyles({
     }
 });
 
-const Counter = () => {
-    const [count, setCount] =useState(0)
+const Counter = ({count, setCount, id}) => {
+
+    const handleIncrement=()=>{
+        if(count===9)
+            return null;
+        setCount((prevState)=>{
+            let countValue= [...prevState];
+            countValue[id] += 1;
+            return countValue; 
+        });
+    };
+
+    const handleDecrement=()=>{
+        if(count===0)
+            return null;
+        setCount((prevState)=>{
+            let countValue= [...prevState];
+            countValue[id] -= 1;
+            return countValue; 
+        });    
+        };
 
     const styles= useStyles();
     return (
         <Paper className={styles.container} >
-            <span onClick={()=>setCount(count-1)}
+            <span onClick={handleDecrement}
             style={{color: 'green'}} className={styles.counterButton}>
                 –
             </span>
             <span style={{padding:'0 5px'}}>
                 {count}
             </span>
-            <span onClick={()=>setCount(count+1)}
+            <span onClick={handleIncrement}
             style={{color: 'greenyellow'}} className={styles.counterButton}>
                 +
             </span>

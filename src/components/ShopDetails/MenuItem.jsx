@@ -12,6 +12,9 @@ const useStyles = makeStyles({
       display: 'grid',
       gridTemplateColumns: '40% 60%',
       marginBottom: '20px',
+      '@media(max-width:768px)':{
+        marginBottom: '10px',
+    }
   },
   image:{
       width: '100%',
@@ -36,7 +39,7 @@ const useStyles = makeStyles({
 
 });
 
-const MenuItem = () => {
+const MenuItem = ({name,quantity,price,count,setCount, id}) => {
     const styles = useStyles();
 
     return (
@@ -44,18 +47,18 @@ const MenuItem = () => {
             <img src={craft} alt="pani puri" className={styles.image}/>
             <div className={styles.containerDiv}>
                 <Typography variant="h6" component="h2">
-                    PaniPuri
+                    {name}
                 </Typography>
                 <div className={styles.infoDiv}>
                     <div className={styles.itemDescription}>
                         <Typography variant="body2" component="p">
-                            1 Plate
+                            {quantity}
                         </Typography>
                         <Typography variant="body1" component="p">
-                            ₹ 10
+                            {`₹ ${price}`}
                         </Typography>
                     </div>
-                    <Counter />
+                    <Counter count={count} setCount={setCount} id={id} />
                 </div>
             </div>
         </Card>
