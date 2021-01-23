@@ -8,10 +8,11 @@
   <h3 align="center">A Dummy E-Commerce site made using React</h3>
 
   <p align="center">
-    UI similar to the [Nogozo app](https://play.google.com/store/apps/details?id=com.anvesh.nogozocustomerapplication)
+  UI similar to the <a href="https://play.google.com/store/apps/details?id=com.anvesh.nogozocustomerapplication">Nogozo app </a>
   </p>
 </p>
 
+[Live Site](https://optimistic-wiles-304007.netlify.app)
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -35,15 +36,48 @@
 
 <!-- ABOUT THE PROJECT -->
 ## Screenshots
+### Home page
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+* Desktop\
+  ![home page desktop](https://github.com/chickoocoutinho/nogozo-demo/blob/main/screenshots/desktop-home.png)
+  
+* Tab\
+  ![home page tab](https://github.com/chickoocoutinho/nogozo-demo/blob/main/screenshots/tab-home.png)
+  
+* Mobile\
+  ![home page mobile](https://github.com/chickoocoutinho/nogozo-demo/blob/main/screenshots/mobile-home.png)
+  
+### Shop List
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
+* Tab\
+  ![shop list tab](https://github.com/chickoocoutinho/nogozo-demo/blob/main/screenshots/tab-list.png)
+  
+* Mobile\
+  ![shop list mobile](https://github.com/chickoocoutinho/nogozo-demo/blob/main/screenshots/mobile-list.png)
+  
+### Shop Profile
 
+* Desktop (with items in cart)\
+  ![shop profile desktop](https://github.com/chickoocoutinho/nogozo-demo/blob/main/screenshots/desktop-menu-withcart.png)
+  
+* Mobile (Shop which is Open)\
+  ![shop profile mobile](https://github.com/chickoocoutinho/nogozo-demo/blob/main/screenshots/mobile-menu-open.png)
+  
+ * Mobile (Shop which is Closed)\
+  ![shop profile mobile](https://github.com/chickoocoutinho/nogozo-demo/blob/main/screenshots/mobile-menu-closed.png)
 
-### Built With
+### Cart
+* Desktop\
+  ![cart desktop](https://github.com/chickoocoutinho/nogozo-demo/blob/main/screenshots/desktop-cart.png)
+  
+* Mobile\
+  ![cart mobile](https://github.com/chickoocoutinho/nogozo-demo/blob/main/screenshots/mobile-cart.png)
+  
+### Mobile Menu
+
+![menu](https://github.com/chickoocoutinho/nogozo-demo/blob/main/screenshots/mobile-cart.png)
+
+## Built With
 
 * [React](https://reactjs.org/)
 * [Material-UI](https://material-ui.com/)
@@ -120,5 +154,5 @@ Distributed under the GNU General Public License v3.0 License.
 
 ## Contact
 
-Benito Coutinho - [Linkedin]:(https://linkedin.com/in/github_username)
+Benito Coutinho - [Linkedin](https://linkedin.com/in/github_username)
 
