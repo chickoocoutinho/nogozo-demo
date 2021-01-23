@@ -1,5 +1,6 @@
 import { Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import { useNavigate } from '@reach/router';
 
 const useStyles= makeStyles({
     bottomCart:{
@@ -12,19 +13,24 @@ const useStyles= makeStyles({
         backgroundColor: '#3468a6',
         textAlign: 'center',
         color: '#fff',
+        '&:hover':{
+            cursor: 'pointer'
+        }
     }
 });
 
 const CartButtonDisplay = ({totalItemsCost}) => {
 
+    const navigate= useNavigate();
     const styles= useStyles();
     return (
-        <div className={styles.bottomCart}>
+        <div onClick={()=>navigate('/cart', {state:{totalItemsCost} })}
+        className={styles.bottomCart}>
             <Typography variant='outline' component='p'>
                 {`Total: ₹ ${totalItemsCost.cost}`}
             </Typography>
             <Typography variant='button' component='p'>
-                Go to Cart &gt;&gt;
+                Go to Cart &gt;
             </Typography>
         </div>
     );

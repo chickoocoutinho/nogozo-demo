@@ -25,7 +25,10 @@ const ShopDetails = ({location}) => {
         0,0,0,0,0
     ]);
     const [showCart,setShowCart]= useState(false);
-    const [totalItemsCost, setTotalItemsCost]= useState(0)
+    const [totalItemsCost, setTotalItemsCost]= useState({
+        cost: 0,
+        items: [],
+    })
 
     useEffect(()=>{
         const totalItem= shopItemsQuantity.reduce((a, b) => a + b, 0);

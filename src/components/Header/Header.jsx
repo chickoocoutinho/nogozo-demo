@@ -10,7 +10,7 @@ const useStyles= makeStyles({
         width: '100%',
         position: 'sticky',
         top: '0',
-        zIndex: '99999',
+        zIndex: '1000',
     },
     logoDiv:{
         width: '100%',
