@@ -21,7 +21,7 @@ const useStyles= makeStyles({
     },
 })
 
-const ShopSummary = ({isOpen, name}) => {
+const ShopSummary = ({isOpen, name ,address}) => {
 
     const styles= useStyles();
     return (
@@ -31,7 +31,7 @@ const ShopSummary = ({isOpen, name}) => {
                 {name}
             </Typography>
             <Typography variant='body1' component='p'>
-                Address: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                {`Address: ${address}`}
             </Typography>
             <div className={styles.statusDiv}>
                 <Typography variant='body1' component='p'>

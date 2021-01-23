@@ -57,7 +57,7 @@ const ShopDetails = ({location}) => {
     const styles= useStyles({showCart});
     return (
         <>
-        <ShopSummary isOpen={location.state.isOpen} name={location.state.name} />
+        <ShopSummary isOpen={location.state.isOpen} name={location.state.name} address={location.state.address}  />
         <div className={styles.listContainer}>
             {
                 ShopItemsData.map((value,id)=>(

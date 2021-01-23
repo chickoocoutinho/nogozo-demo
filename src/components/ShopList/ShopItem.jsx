@@ -37,7 +37,7 @@ const ShopItem = ({name, address, isOpen, homeBusiness}) => {
     const styles= useStyles();
     return (
         <Card className={styles.cardContainer} 
-        onClick={()=>navigate(`/shopDetails`,{ state: { isOpen , name } })}>
+        onClick={()=>navigate(`/shopDetails`,{ state: { isOpen , name , address } })}>
             <Typography variant="h5" component="h2">
                 {name}
             </Typography>

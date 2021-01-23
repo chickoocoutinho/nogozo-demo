@@ -1,26 +1,26 @@
 
 const dummyShopData = [
     {
-        name:'some random shop',
-        address: 'jj dfjdjkf dfkjdfjkjk dfjkdfkjdfjk dfjkdfjkdfkj dfjkjkdfkjdf',
+        name:'ABC General', 
+        address: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ',
         isOpen: true,
         homeBusiness: true
     },
     {
-        name:'some random shop',
-        address: 'jj dfjdjkf dfkjdfjkjk dfjkdfkjdfjk dfjkdfjkdfkj dfjkjkdfkjdf',
+        name:'XYZ Cake Shop',
+        address: 'incididunt ut labore et dolore magna aliqua. Ut enim ad minim ',
         isOpen: false,
         homeBusiness: true
     },
     {
-        name:'some random shop',
-        address: 'jj dfjdjkf dfkjdfjkjk dfjkdfkjdfjk dfjkdfjkdfkj dfjkjkdfkjdf',
+        name:'PQR Stores',
+        address: 'reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
         isOpen: true,
         homeBusiness: false
     },
     {
-        name:'some random shop',
-        address: 'jj dfjdjkf dfkjdfjkjk dfjkdfkjdfjk dfjkdfjkdfkj dfjkjkdfkjdf',
+        name:'Random shop',
+        address: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa',
         isOpen: false,
         homeBusiness: false
     },
